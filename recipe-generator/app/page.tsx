@@ -130,7 +130,7 @@ export default function RecipeGenerator() {
             type="text"
             value={ingredients}
             onChange={(e) => setIngredients(e.target.value)}
-            placeholder="Enter ingredients (comma-separated) Example - Pasta "
+            placeholder="Enter ingredients (comma-separated) Ex. Pasta or Chicken "
             className="flex-grow"
           />
           <Button type="submit" disabled={isLoading} className="w-full sm:w-auto">
