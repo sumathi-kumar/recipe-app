@@ -1,4 +1,4 @@
-/* import OpenAI from "openai"
+import OpenAI from "openai"
 import { OpenAIStream, StreamingTextResponse } from "ai"
 
 export const runtime = "edge"
@@ -51,5 +51,4 @@ Keep the recipe practical and easy to follow. Ensure all ingredients are used.`,
     })
   }
 }
-*/
 
