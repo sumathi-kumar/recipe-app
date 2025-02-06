@@ -1,5 +1,5 @@
 import OpenAI from "openai"
-import { OpenAIStream, StreamingTextResponse } from "ai"
+/*import { OpenAIStream, StreamingTextResponse } from "ai"*/
 
 export const runtime = "edge"
 
@@ -41,8 +41,9 @@ Keep the recipe practical and easy to follow. Ensure all ingredients are used.`,
       max_tokens: 800,
     })
 
-    const stream = OpenAIStream(response)
-    return new StreamingTextResponse(stream)
+    /*const stream = OpenAIStream(response)
+    return new StreamingTextResponse(stream) */
+  return response.choices[0].message.content;
   } catch (error: any) {
     console.error("API Error:", error)
     return new Response(JSON.stringify({ error: error.message || "An error occurred" }), {
