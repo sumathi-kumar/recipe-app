@@ -121,7 +121,7 @@ export default function RecipeGenerator() {
       </div>
       <div className="text-center mb-8 pt-12">
         <h1 className="text-3xl font-bold mb-2">Recipe Generator</h1>
-        <p className="text-muted-foreground">Enter your ingredients and let AI create a recipe for you</p>
+        <p className="text-muted-foreground">Enter your ingredients to see the recipe. </p>
       </div>
 
       <form onSubmit={handleSubmit} className="mb-8 max-w-2xl mx-auto">
@@ -130,7 +130,7 @@ export default function RecipeGenerator() {
             type="text"
             value={ingredients}
             onChange={(e) => setIngredients(e.target.value)}
-            placeholder="Enter ingredients (comma-separated)"
+            placeholder="Enter ingredients (comma-separated) Example - Pasta "
             className="flex-grow"
           />
           <Button type="submit" disabled={isLoading} className="w-full sm:w-auto">
